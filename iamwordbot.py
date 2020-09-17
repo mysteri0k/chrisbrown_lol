@@ -7,25 +7,25 @@ import enchant
 # create the objects from the imported modules
 
 # reddit api login
-reddit = praw.Reddit(client_id='mI_9NuNJaoQvoA',
-                     client_secret='1tvX-iboQrU7afIlg-nU5Gne9ks',
-                     username='iamwordbot',
-                     password='iamwordbot',
-                     user_agent='wordbot by /u/jfishersolutions')
+reddit = praw.Reddit(client_id='94wok7S9OmSH5A',
+                     client_secret='Rnl4q2r5O6H00tCM-EHXsTLEjc4',
+                     username='chrisbrown_lol',
+                     password='timesofindiafunny',
+                     user_agent='i love chris brown')
                     
 # dictionary and word check
-dictionary = PyDictionary()
-d = enchant.Dict("en_US")
+ dictionary = PyDictionary()
+ d = enchant.Dict("en_US")
 
 # check if the word is real
-def isWord(word):
+ def isWord(word):
     return d.check(word)
 
 # the subreddits you want your bot to live on
-subreddit = reddit.subreddit('words')
+subreddit = reddit.subreddit('pythonforengineers')
 
 # phrase to activate the bot
-keyphrase = '!wordbot '
+keyphrase = 'chris brown'
 
 # look for phrase and reply appropriately
 for comment in subreddit.stream.comments():
